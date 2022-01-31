@@ -6,6 +6,8 @@ The commonest use is to let visitors sign their own transactions because of the 
 
 The epecific controllers which manage this are on /lib/coop_chain_web/controllers folder
 
+*This example was programmed using a local Ganache/Truffle enviroment, hence I didn't bother removing the private keys and those not represent any real address.
+
 # CoopChain
 
 To start your Phoenix server:
