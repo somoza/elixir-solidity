@@ -1,0 +1,5 @@
+<h1>Edit Minute</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.minute_path(@conn, :update, @minute)) %>
+
+<span><%= link "Back", to: Routes.minute_path(@conn, :index) %></span>
