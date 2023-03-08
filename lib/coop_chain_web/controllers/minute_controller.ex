@@ -48,7 +48,7 @@ defmodule CoopChainWeb.MinuteController do
       data: "0x" <> abi_encoded_data
     })
 
-    response |> String.slice(2..-1) |> Base.decode16!(case: :lower) |> TypeDecoder.decode_raw([{:string[], 256}])
+    response |> String.slice(2..-1) |> Base.decode16!(case: :lower) |> TypeDecoder.decode_raw([{:string, 256}])
 
     # render(conn, "index.html", minutes: [1,2,3,4], balance_bytes: "dsad")
   end
